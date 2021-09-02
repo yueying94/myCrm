@@ -1,0 +1,75 @@
+2021-08-31 10:01:09.551 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-31 10:01:09.566 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-31 10:01:19.913 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 9724 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-31 10:01:19.922 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-31 10:01:19.964 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-31 10:01:19.965 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-31 10:01:21.138 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8081 (http)
+2021-08-31 10:01:21.147 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-31 10:01:21.147 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-31 10:01:21.148 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-31 10:01:21.260 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-31 10:01:21.261 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1296 ms
+2021-08-31 10:01:22.433 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-31 10:01:22.453 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8081"]
+2021-08-31 10:01:22.468 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-31 10:01:22.477 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.98 seconds (JVM running for 5.642)
+2021-08-31 10:03:06.164 [http-nio-8081-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-31 10:03:06.164 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-31 10:03:06.165 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 0 ms
+2021-08-31 10:03:06.271 [http-nio-8081-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-31 10:03:06.444 [http-nio-8081-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-31 10:08:14.795 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-31 10:08:14.806 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-31 10:11:01.605 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 16540 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-31 10:11:01.614 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-31 10:11:01.653 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-31 10:11:01.653 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-31 10:11:02.833 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8081 (http)
+2021-08-31 10:11:02.842 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-31 10:11:02.842 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-31 10:11:02.842 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-31 10:11:02.954 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-31 10:11:02.954 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1300 ms
+2021-08-31 10:11:04.025 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-31 10:11:04.047 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8081"]
+2021-08-31 10:11:04.063 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-31 10:11:04.073 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.885 seconds (JVM running for 5.486)
+2021-08-31 10:11:20.830 [http-nio-8081-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-31 10:11:20.830 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-31 10:11:20.831 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-31 10:11:20.943 [http-nio-8081-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-31 10:11:21.071 [http-nio-8081-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-31 10:21:08.147 [http-nio-8081-exec-10] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "有效": not a valid `int` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "有效": not a valid `int` value
+ at [Source: (PushbackInputStream); line: 1, column: 97] (through reference chain: com.crm.vo.SystemUserManageSetVo["status"])
+2021-08-31 10:21:08.198 [http-nio-8081-exec-10] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `int` from String "有效": not a valid `int` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `int` from String "有效": not a valid `int` value
+ at [Source: (PushbackInputStream); line: 1, column: 97] (through reference chain: com.crm.vo.SystemUserManageSetVo["status"])]
+2021-08-31 10:23:02.024 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-31 10:23:02.058 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-31 10:23:15.326 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 14240 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-31 10:23:15.335 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-31 10:23:15.373 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-31 10:23:15.373 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-31 10:23:16.560 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8081 (http)
+2021-08-31 10:23:16.568 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-31 10:23:16.569 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-31 10:23:16.569 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-31 10:23:16.681 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-31 10:23:16.682 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1307 ms
+2021-08-31 10:23:17.836 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-31 10:23:17.864 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8081"]
+2021-08-31 10:23:17.882 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-31 10:23:17.892 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.034 seconds (JVM running for 5.679)
+2021-08-31 10:23:45.657 [http-nio-8081-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-31 10:23:45.658 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-31 10:23:45.659 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-31 10:23:45.777 [http-nio-8081-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-31 10:23:46.025 [http-nio-8081-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-31 10:24:07.248 [http-nio-8081-exec-3] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'et.createtime != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "createtime")
+2021-08-31 10:24:07.255 [http-nio-8081-exec-3] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'et.createtime != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "createtime")]
+2021-08-31 10:33:27.222 [http-nio-8081-exec-10] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'et.createtime != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "createtime")
+2021-08-31 10:33:27.568 [http-nio-8081-exec-10] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'et.createtime != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "createtime")]
+2021-08-31 10:33:36.465 [http-nio-8081-exec-3] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'et.createtime != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "createtime")
+2021-08-31 10:33:36.471 [http-nio-8081-exec-3] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'et.createtime != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "createtime")]
+2021-08-31 10:33:37.460 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-31 10:33:37.472 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.

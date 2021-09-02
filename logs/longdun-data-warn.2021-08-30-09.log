@@ -1,0 +1,16 @@
+2021-08-30 09:26:02.688 [restartedMain] WARN  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:61] - Unable to start LiveReload server
+2021-08-30 09:26:02.734 [restartedMain] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8081 is already in use
+2021-08-30 09:26:02.792 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+

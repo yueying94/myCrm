@@ -1,0 +1,767 @@
+2021-08-24 22:03:20.622 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 26096 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:03:20.631 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:03:20.674 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:03:20.674 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:03:22.018 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:03:22.127 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:03:22.127 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:03:22.127 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:03:22.238 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:03:22.238 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1563 ms
+2021-08-24 22:03:23.375 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:03:23.395 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:03:23.412 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:03:23.431 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.258 seconds (JVM running for 6.352)
+2021-08-24 22:03:29.451 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:03:29.466 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:03:29.467 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:03:29.469 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 2 ms
+2021-08-24 22:03:29.564 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-24 22:03:30.045 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-24 22:04:17.422 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-24 22:04:17.433 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-24 22:04:24.242 [restartedMain] ERROR [org.springframework.boot.SpringApplication:843] - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Could not initialize Log4J2 logging from log4j2.yml
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131) ~[spring-context-5.3.9.jar:5.3.9]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63) ~[spring-boot-2.5.4.jar:2.5.4]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_162]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) [spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) [spring-boot-2.5.4.jar:2.5.4]
+	at com.crm.MyCrmApplication.main(MyCrmApplication.java:10) [classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.5.4.jar:2.5.4]
+Caused by: java.lang.IllegalStateException: Could not initialize Log4J2 logging from log4j2.yml
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.loadConfiguration(Log4J2LoggingSystem.java:193) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.loadConfiguration(Log4J2LoggingSystem.java:181) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:163) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:316) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 23 more
+Caused by: java.io.FileNotFoundException: E:\Zzy\projects\myCrm\log4j2.yml (系统找不到指定的文件。)
+	at java.io.FileInputStream.open0(Native Method) ~[?:1.8.0_162]
+	at java.io.FileInputStream.open(FileInputStream.java:195) ~[?:1.8.0_162]
+	at java.io.FileInputStream.<init>(FileInputStream.java:138) ~[?:1.8.0_162]
+	at java.io.FileInputStream.<init>(FileInputStream.java:93) ~[?:1.8.0_162]
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90) ~[?:1.8.0_162]
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188) ~[?:1.8.0_162]
+	at java.net.URL.openStream(URL.java:1045) ~[?:1.8.0_162]
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.getConfigurationSource(Log4J2LoggingSystem.java:198) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.loadConfiguration(Log4J2LoggingSystem.java:189) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.loadConfiguration(Log4J2LoggingSystem.java:181) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:57) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.logging.log4j2.Log4J2LoggingSystem.initialize(Log4J2LoggingSystem.java:163) ~[spring-boot-2.5.4.jar:2.5.4]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:316) ~[spring-boot-2.5.4.jar:2.5.4]
+	... 23 more
+2021-08-24 22:12:09.188 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 40700 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:12:09.196 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:12:09.239 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:12:09.239 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:12:10.324 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:12:10.445 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:12:10.446 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:12:10.446 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:12:10.556 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:12:10.557 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1317 ms
+2021-08-24 22:12:11.598 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:12:11.618 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:12:11.634 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:12:11.643 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.874 seconds (JVM running for 5.226)
+2021-08-24 22:12:23.598 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:12:23.604 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:12:23.604 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:12:23.605 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 0 ms
+2021-08-24 22:12:23.693 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.binding.BindingException: Parameter 'dept' not found. Available parameters are [emp, param1]] with root cause
+org.apache.ibatis.binding.BindingException: Parameter 'dept' not found. Available parameters are [emp, param1]
+	at org.apache.ibatis.binding.MapperMethod$ParamMap.get(MapperMethod.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.DynamicContext$ContextAccessor.getProperty(DynamicContext.java:120) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2719) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTChain.getValueBody(ASTChain.java:141) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_162]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.2.jar:3.5.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.sun.proxy.$Proxy80.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.sun.proxy.$Proxy81.selectSystemUserManage(Unknown Source) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.sun.proxy.$Proxy82.selectSystemUserManage(Unknown Source) ~[?:?]
+	at com.crm.service.impl.EmpServiceImpl.selectSystemUserManage(EmpServiceImpl.java:36) ~[classes/:?]
+	at com.crm.service.impl.EmpServiceImpl$$FastClassBySpringCGLIB$$827f9d05.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.crm.service.impl.EmpServiceImpl$$EnhancerBySpringCGLIB$$a38cdf1b.selectSystemUserManage(<generated>) ~[classes/:?]
+	at com.crm.controller.EmpController.selectSystemUserManage(EmpController.java:33) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2021-08-24 22:13:03.657 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 26156 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:13:03.667 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:13:03.707 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:13:03.708 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:13:04.792 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:13:04.905 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:13:04.906 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:13:04.906 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:13:05.025 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:13:05.025 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1317 ms
+2021-08-24 22:13:06.624 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:13:06.666 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:13:06.694 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:13:06.714 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.506 seconds (JVM running for 5.899)
+2021-08-24 22:13:31.686 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 43500 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:13:31.695 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:13:31.732 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:13:31.733 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:13:32.780 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:13:32.886 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:13:32.887 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:13:32.887 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:13:32.991 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:13:32.991 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1258 ms
+2021-08-24 22:13:33.998 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:13:34.018 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:13:34.033 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:13:34.043 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.824 seconds (JVM running for 5.141)
+2021-08-24 22:13:40.522 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:13:40.528 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:13:40.528 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:13:40.529 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 0 ms
+2021-08-24 22:13:40.605 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'emp.dept.deptname != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "deptname")] with root cause
+org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "deptname")
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2712) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTChain.getValueBody(ASTChain.java:141) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_162]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.2.jar:3.5.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.sun.proxy.$Proxy80.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.sun.proxy.$Proxy81.selectSystemUserManage(Unknown Source) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.sun.proxy.$Proxy82.selectSystemUserManage(Unknown Source) ~[?:?]
+	at com.crm.service.impl.EmpServiceImpl.selectSystemUserManage(EmpServiceImpl.java:36) ~[classes/:?]
+	at com.crm.service.impl.EmpServiceImpl$$FastClassBySpringCGLIB$$827f9d05.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.crm.service.impl.EmpServiceImpl$$EnhancerBySpringCGLIB$$39ba0183.selectSystemUserManage(<generated>) ~[classes/:?]
+	at com.crm.controller.EmpController.selectSystemUserManage(EmpController.java:33) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2021-08-24 22:15:52.168 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 28860 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:15:52.177 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:15:52.229 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:15:52.230 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:15:53.556 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:15:53.695 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:15:53.709 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:15:53.709 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:15:53.880 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:15:53.880 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1649 ms
+2021-08-24 22:15:55.035 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:15:55.058 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:15:55.075 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:15:55.085 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.504 seconds (JVM running for 7.345)
+2021-08-24 22:16:27.278 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:16:27.285 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:16:27.285 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:16:27.287 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 2 ms
+2021-08-24 22:16:27.367 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'emp.dept.deptname != null and emp.dept.deptname != '''. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "deptname")] with root cause
+org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "deptname")
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2712) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTChain.getValueBody(ASTChain.java:141) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTAnd.getValueBody(ASTAnd.java:61) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_162]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.2.jar:3.5.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.sun.proxy.$Proxy80.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.sun.proxy.$Proxy81.selectSystemUserManage(Unknown Source) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.sun.proxy.$Proxy82.selectSystemUserManage(Unknown Source) ~[?:?]
+	at com.crm.service.impl.EmpServiceImpl.selectSystemUserManage(EmpServiceImpl.java:36) ~[classes/:?]
+	at com.crm.service.impl.EmpServiceImpl$$FastClassBySpringCGLIB$$827f9d05.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.crm.service.impl.EmpServiceImpl$$EnhancerBySpringCGLIB$$4fffa10a.selectSystemUserManage(<generated>) ~[classes/:?]
+	at com.crm.controller.EmpController.selectSystemUserManage(EmpController.java:33) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2021-08-24 22:17:33.281 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 37544 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:17:33.289 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:17:33.327 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:17:33.327 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:17:34.404 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:17:34.514 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:17:34.514 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:17:34.514 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:17:34.683 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:17:34.683 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1355 ms
+2021-08-24 22:17:35.820 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:17:35.844 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:17:35.865 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:17:35.875 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.032 seconds (JVM running for 5.368)
+2021-08-24 22:17:42.312 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:17:42.319 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:17:42.319 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:17:42.320 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-24 22:17:42.399 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'emp.position.pname != null'. Cause: org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "pname")] with root cause
+org.apache.ibatis.ognl.OgnlException: source is null for getProperty(null, "pname")
+	at org.apache.ibatis.ognl.OgnlRuntime.getProperty(OgnlRuntime.java:2712) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTProperty.getValueBody(ASTProperty.java:114) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTChain.getValueBody(ASTChain.java:141) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.ASTNotEq.getValueBody(ASTNotEq.java:50) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.evaluateGetValueBody(SimpleNode.java:212) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.SimpleNode.getValue(SimpleNode.java:258) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:493) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.ognl.Ognl.getValue(Ognl.java:457) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.OgnlCache.getValue(OgnlCache.java:46) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.ExpressionEvaluator.evaluateBoolean(ExpressionEvaluator.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.IfSqlNode.apply(IfSqlNode.java:34) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.lambda$apply$0(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at java.util.ArrayList.forEach(ArrayList.java:1257) ~[?:1.8.0_162]
+	at org.apache.ibatis.scripting.xmltags.MixedSqlNode.apply(MixedSqlNode.java:32) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.scripting.xmltags.DynamicSqlSource.getBoundSql(DynamicSqlSource.java:39) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.mapping.MappedStatement.getBoundSql(MappedStatement.java:297) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:81) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.2.jar:3.5.2]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.2.jar:3.5.2]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.sun.proxy.$Proxy80.selectList(Unknown Source) ~[?:?]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223) ~[mybatis-spring-2.0.2.jar:2.0.2]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61) ~[mybatis-plus-core-3.2.0.jar:3.2.0]
+	at com.sun.proxy.$Proxy81.selectSystemUserManage(Unknown Source) ~[?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.sun.proxy.$Proxy82.selectSystemUserManage(Unknown Source) ~[?:?]
+	at com.crm.service.impl.EmpServiceImpl.selectSystemUserManage(EmpServiceImpl.java:36) ~[classes/:?]
+	at com.crm.service.impl.EmpServiceImpl$$FastClassBySpringCGLIB$$827f9d05.invoke(<generated>) ~[classes/:?]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.9.jar:5.3.9]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:688) ~[spring-aop-5.3.9.jar:5.3.9]
+	at com.crm.service.impl.EmpServiceImpl$$EnhancerBySpringCGLIB$$c8e2e04.selectSystemUserManage(<generated>) ~[classes/:?]
+	at com.crm.controller.EmpController.selectSystemUserManage(EmpController.java:33) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2021-08-24 22:19:33.601 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 9964 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:19:33.611 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:19:33.656 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:19:33.656 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:19:34.774 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:19:34.882 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:19:34.883 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:19:34.883 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:19:34.991 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:19:34.992 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1335 ms
+2021-08-24 22:19:36.020 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:19:36.041 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:19:36.058 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:19:36.067 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.928 seconds (JVM running for 5.685)
+2021-08-24 22:19:54.257 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:19:54.263 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:19:54.263 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:19:54.264 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-24 22:19:54.344 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-24 22:19:54.577 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-24 22:20:23.143 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-24 22:20:23.152 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-24 22:20:33.318 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 33228 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:20:33.328 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:20:33.372 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:20:33.373 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:20:34.494 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:20:34.604 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:20:34.604 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:20:34.604 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:20:34.710 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:20:34.710 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1337 ms
+2021-08-24 22:20:35.757 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:20:35.782 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:20:35.802 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:20:35.815 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.936 seconds (JVM running for 5.418)
+2021-08-24 22:20:42.084 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:20:42.090 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:20:42.091 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:20:42.092 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-24 22:20:42.123 [http-nio-8080-exec-1] ERROR [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]:175] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at com.crm.controller.EmpController.selectSystemUserManage(EmpController.java:32) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_162]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_162]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_162]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_162]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1064) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.9.jar:5.3.9]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.52.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.9.jar:5.3.9]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1726) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.52.jar:9.0.52]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_162]
+2021-08-24 22:22:35.763 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 43896 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:22:35.773 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:22:35.812 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:22:35.812 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:22:37.006 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:22:37.118 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:22:37.119 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:22:37.119 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:22:37.240 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:22:37.240 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1427 ms
+2021-08-24 22:22:38.412 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:22:38.434 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:22:38.461 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:22:38.470 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.193 seconds (JVM running for 6.86)
+2021-08-24 22:22:58.700 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:22:58.707 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:22:58.708 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:22:58.708 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 0 ms
+2021-08-24 22:22:58.789 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-24 22:22:59.061 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-24 22:23:57.809 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-24 22:23:57.829 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-24 22:24:07.877 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 40212 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:24:07.885 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:24:07.929 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:24:07.929 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:24:09.160 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:24:09.277 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:24:09.278 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:24:09.278 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:24:09.385 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:24:09.385 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1456 ms
+2021-08-24 22:24:10.506 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:24:10.525 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:24:10.541 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:24:10.551 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.13 seconds (JVM running for 5.577)
+2021-08-24 22:24:23.614 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:24:23.673 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:24:23.674 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:24:23.675 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-24 22:24:23.762 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-24 22:24:24.050 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-24 22:26:43.902 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-24 22:26:43.913 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-24 22:26:59.058 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 42592 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:26:59.067 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:26:59.113 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:26:59.113 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:27:00.179 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:27:00.287 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:27:00.287 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:27:00.287 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:27:00.396 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:27:00.396 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1283 ms
+2021-08-24 22:27:01.700 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:27:01.722 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:27:01.737 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:27:01.747 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 3.266 seconds (JVM running for 5.922)
+2021-08-24 22:27:37.772 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:27:37.781 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:27:37.781 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:27:37.782 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-24 22:27:37.870 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-24 22:27:38.090 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-24 22:28:54.526 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-24 22:28:54.537 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.
+2021-08-24 22:29:04.909 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 34464 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-24 22:29:04.918 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-24 22:29:04.957 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-24 22:29:04.957 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-24 22:29:06.016 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8080 (http)
+2021-08-24 22:29:06.128 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:29:06.129 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-24 22:29:06.129 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-24 22:29:06.234 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-24 22:29:06.234 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1276 ms
+2021-08-24 22:29:07.235 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-24 22:29:07.256 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8080"]
+2021-08-24 22:29:07.271 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8080 (http) with context path ''
+2021-08-24 22:29:07.280 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 2.809 seconds (JVM running for 5.356)
+2021-08-24 22:29:16.190 [http-nio-8080-exec-1] INFO  [org.apache.tomcat.util.http.parser.Cookie:173] - A cookie header was received [1629591076,1629622441,1629679592] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2021-08-24 22:29:16.196 [http-nio-8080-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-24 22:29:16.196 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-24 22:29:16.197 [http-nio-8080-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-24 22:29:16.278 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-24 22:29:16.419 [http-nio-8080-exec-1] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-24 22:29:55.336 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-24 22:29:55.344 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.

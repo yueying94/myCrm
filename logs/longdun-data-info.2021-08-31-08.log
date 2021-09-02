@@ -1,0 +1,21 @@
+2021-08-31 08:16:39.520 [restartedMain] INFO  [com.crm.MyCrmApplication:55] - Starting MyCrmApplication using Java 1.8.0_162 on DESKTOP-2U2RKNE with PID 10804 (E:\Zzy\projects\myCrm\target\classes started by huyueying in E:\Zzy\projects\myCrm)
+2021-08-31 08:16:39.544 [restartedMain] INFO  [com.crm.MyCrmApplication:659] - No active profile set, falling back to default profiles: default
+2021-08-31 08:16:39.623 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-31 08:16:39.624 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor:255] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-31 08:16:41.387 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:108] - Tomcat initialized with port(s): 8081 (http)
+2021-08-31 08:16:41.398 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-31 08:16:41.398 [restartedMain] INFO  [org.apache.catalina.core.StandardService:173] - Starting service [Tomcat]
+2021-08-31 08:16:41.398 [restartedMain] INFO  [org.apache.catalina.core.StandardEngine:173] - Starting Servlet engine: [Apache Tomcat/9.0.52]
+2021-08-31 08:16:41.522 [restartedMain] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring embedded WebApplicationContext
+2021-08-31 08:16:41.522 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext:290] - Root WebApplicationContext: initialization completed in 1895 ms
+2021-08-31 08:16:43.121 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:58] - LiveReload server is running on port 35729
+2021-08-31 08:16:43.156 [restartedMain] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] - Starting ProtocolHandler ["http-nio-8081"]
+2021-08-31 08:16:43.193 [restartedMain] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:220] - Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-31 08:16:43.233 [restartedMain] INFO  [com.crm.MyCrmApplication:61] - Started MyCrmApplication in 4.433 seconds (JVM running for 9.688)
+2021-08-31 08:17:25.954 [http-nio-8081-exec-1] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-31 08:17:25.955 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:525] - Initializing Servlet 'dispatcherServlet'
+2021-08-31 08:17:25.956 [http-nio-8081-exec-1] INFO  [org.springframework.web.servlet.DispatcherServlet:547] - Completed initialization in 1 ms
+2021-08-31 08:17:26.099 [http-nio-8081-exec-2] INFO  [com.zaxxer.hikari.HikariDataSource:110] - HikariPool-1 - Starting...
+2021-08-31 08:17:27.047 [http-nio-8081-exec-2] INFO  [com.zaxxer.hikari.HikariDataSource:123] - HikariPool-1 - Start completed.
+2021-08-31 08:39:12.336 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:350] - HikariPool-1 - Shutdown initiated...
+2021-08-31 08:39:12.361 [SpringApplicationShutdownHook] INFO  [com.zaxxer.hikari.HikariDataSource:352] - HikariPool-1 - Shutdown completed.

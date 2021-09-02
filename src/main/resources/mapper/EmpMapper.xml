@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crm.mapper.EmpMapper">
+
+<!--    &lt;!&ndash;SystemUserManage 系统管理-用户管理页面 查询emp所有相关信息&ndash;&gt;-->
+<!--    <resultMap id="SystemUserManage" type="com.crm.entity.Emp">-->
+<!--        <id column="empid"  property="empid"></id>-->
+<!--        <result column="ename"  property="ename"></result>-->
+<!--        <result column="pwd"  property="pwd"></result>-->
+<!--        <result column="logname"  property="logname"></result>-->
+<!--        <result column="phone"  property="phone"></result>-->
+<!--        <result column="email"  property="email"></result>-->
+<!--        <result column="sex;"  property="sex"></result>-->
+<!--        <result column="status"  property="status"></result>-->
+<!--        <result column="createtime"  property="createtime"></result>-->
+<!--        <association property="dept" javaType="com.crm.entity.Dept">-->
+<!--            <id column="deptid" property="deptid"></id>-->
+<!--            <result column="deptname" property="deptname"></result>-->
+<!--            <result column="enable" property="enable"></result>-->
+<!--            <result column="superior" property="superior"></result>-->
+<!--            <result column="top" property="top"></result>-->
+<!--        </association>-->
+<!--        <association property="position" javaType="com.crm.entity.Position">-->
+<!--            <id column="positionid" property="positionid"></id>-->
+<!--            <result column="pname" property="pname"></result>-->
+<!--         </association>-->
+<!--        <association property="role" javaType="com.crm.entity.Role">-->
+<!--            <id column="roleid" property="roleid"></id>-->
+<!--            <result column="rname" property="rname"></result>-->
+<!--            <result column="description" property="description"></result>-->
+<!--            <result column="status" property="status"></result>-->
+<!--        </association>-->
+<!--    </resultMap>-->
+
+<!--    <select id="selectSystemUserManage" resultMap="SystemUserManage">-->
+<!--        SELECT-->
+<!--            emp.empid,-->
+<!--            emp.ename,-->
+<!--            emp.pwd,-->
+<!--            emp.logname,-->
+<!--            emp.phone,-->
+<!--            emp.email,-->
+<!--            emp.sex,-->
+<!--            emp.`status`,-->
+<!--            emp.createtime,-->
+<!--            dept_emp_position.sid,-->
+<!--            dept_emp_position.deptid,-->
+<!--            dept_emp_position.empid,-->
+<!--            dept_emp_position.positionid,-->
+<!--            dept.deptid,-->
+<!--            dept.deptname,-->
+<!--            dept.`enable`,-->
+<!--            dept.superior,-->
+<!--            dept.top,-->
+<!--            position.positionid,-->
+<!--            position.pname,-->
+<!--            emp_role.erid,-->
+<!--            emp_role.empid,-->
+<!--            emp_role.roleid,-->
+<!--            role.roleid,-->
+<!--            role.rname,-->
+<!--            role.description,-->
+<!--            role.`status`-->
+<!--        FROM-->
+<!--            emp ,-->
+<!--            dept_emp_position ,-->
+<!--            dept ,-->
+<!--            position ,-->
+<!--            emp_role ,-->
+<!--            role-->
+<!--        WHERE-->
+<!--            1=1-->
+<!--          AND emp.empid = dept_emp_position.empid-->
+<!--          AND dept_emp_position.deptid = dept.deptid-->
+<!--          AND dept_emp_position.positionid = position.positionid-->
+<!--          AND emp.empid = emp_role.empid-->
+<!--          AND emp_role.roleid = role.roleid-->
+<!--        <if test="emp.dept != null and emp.dept.deptname != null">-->
+<!--            AND dept.deptname = #{emp.dept.deptname}-->
+<!--        </if>-->
+<!--        <if test="emp != null and emp.status != null" >-->
+<!--            AND emp.`status` = #{emp.status}-->
+<!--        </if>-->
+<!--        <if test="emp.position != null and emp.position.pname != null" >-->
+<!--            AND position.pname = #{emp.position.pname}-->
+<!--        </if>-->
+<!--        <if test="emp.role != null and emp.role.rname != null" >-->
+<!--            AND role.rname = #{emp.role.rname}-->
+<!--        </if>-->
+<!--        <if test="emp != null and emp.ename != null" >-->
+<!--            AND emp.ename = #{emp.ename}-->
+<!--        </if>-->
+<!--        <if test="emp != null and emp.logname != null" >-->
+<!--            AND emp.logname = #{emp.logname}-->
+<!--        </if>-->
+<!--        <if test="emp != null and emp.sex != null" >-->
+<!--            AND emp.sex = #{emp.sex}-->
+<!--        </if>-->
+<!--    </select>-->
+
+</mapper>

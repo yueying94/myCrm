@@ -1,0 +1,16 @@
+2021-08-30 10:03:18.071 [http-nio-8081-exec-3] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-30 10:03:18.076 [http-nio-8081-exec-3] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]
+2021-08-30 10:03:29.866 [http-nio-8081-exec-4] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-30 10:03:29.867 [http-nio-8081-exec-4] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]
+2021-08-30 10:03:50.511 [http-nio-8081-exec-5] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-30 10:03:50.513 [http-nio-8081-exec-5] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]
+2021-08-30 10:05:17.354 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s36ms607µs200ns).
+2021-08-30 10:06:31.671 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54s314ms833µs200ns).
+2021-08-30 10:06:37.240 [http-nio-8081-exec-6] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-30 10:06:37.241 [http-nio-8081-exec-6] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]
+2021-08-30 10:07:01.682 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s15ms553µs500ns).
+2021-08-30 10:07:51.593 [http-nio-8081-exec-7] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-30 10:07:51.595 [http-nio-8081-exec-7] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]
+2021-08-30 10:09:03.677 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m1s949ms122µs900ns).
+2021-08-30 10:09:58.581 [http-nio-8081-exec-8] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-30 10:09:58.589 [http-nio-8081-exec-8] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]

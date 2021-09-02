@@ -1,0 +1,3 @@
+2021-08-30 08:16:52.956 [http-nio-8081-exec-2] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.IndexOutOfBoundsException: Index: 0
+2021-08-30 08:16:52.972 [http-nio-8081-exec-2] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.IndexOutOfBoundsException: Index: 0]
+2021-08-30 08:21:43.033 [HikariPool-1 housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool:788] - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=49s906ms220µs700ns).

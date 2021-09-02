@@ -1,0 +1,52 @@
+2021-08-26 14:24:50.987 [restartedMain] WARN  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:61] - Unable to start LiveReload server
+2021-08-26 14:24:51.041 [restartedMain] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-08-26 14:24:51.081 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-08-26 14:25:05.154 [restartedMain] WARN  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:61] - Unable to start LiveReload server
+2021-08-26 14:25:05.180 [restartedMain] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-08-26 14:25:05.215 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-08-26 14:25:53.827 [restartedMain] WARN  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:61] - Unable to start LiveReload server
+2021-08-26 14:25:53.859 [restartedMain] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-08-26 14:25:53.891 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-08-26 14:31:37.030 [http-nio-8080-exec-1] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-26 14:31:37.139 [http-nio-8080-exec-1] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]
+2021-08-26 14:38:15.333 [http-nio-8080-exec-1] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-26 14:38:15.360 [http-nio-8080-exec-1] WARN  [org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver:207] - Resolved [java.lang.NullPointerException]

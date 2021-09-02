@@ -1,0 +1,28 @@
+2021-08-25 21:12:41.566 [http-nio-8080-exec-1] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.crm.common.util.result.Result com.crm.controller.EmpController.selectSystemUserManage(java.lang.Integer,com.crm.entity.Test)
+2021-08-25 21:51:27.721 [http-nio-8080-exec-1] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-25 21:52:55.376 [http-nio-8080-exec-2] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-25 21:54:22.880 [http-nio-8080-exec-4] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+2021-08-25 21:55:28.709 [http-nio-8080-exec-1] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
+2021-08-25 21:58:55.927 [http-nio-8080-exec-2] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM
+        emp,
+        dept_emp_position,
+        dept,
+        position
+    ' at line 22
+### The error may exist in file [E:\Zzy\projects\myCrm\target\classes\mapper\TestMapper.xml]
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT         emp.empid,         emp.ename,         emp.pwd,         emp.logname,         emp.phone,         emp.email,         emp.sex,         emp.`status`,         emp.createtime,         dept_emp_position.sid,         dept_emp_position.deptid,         dept_emp_position.empid,         dept_emp_position.positionid,         dept.deptid,         dept.deptname,         dept.`enable`,         dept.superior,         dept.top,         position.positionid,         position.pname,         FROM         emp,         dept_emp_position,         dept,         position         WHERE         emp.empid = dept_emp_position.empid         AND dept_emp_position.deptid = dept.deptid         AND dept_emp_position.positionid = position.positionid         AND emp.logname = ?
+### Cause: java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM
+        emp,
+        dept_emp_position,
+        dept,
+        position
+    ' at line 22
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM
+        emp,
+        dept_emp_position,
+        dept,
+        position
+    ' at line 22

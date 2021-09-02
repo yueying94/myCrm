@@ -1,0 +1,18 @@
+2021-08-25 10:02:23.311 [restartedMain] WARN  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer:61] - Unable to start LiveReload server
+2021-08-25 10:02:23.400 [restartedMain] WARN  [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext:591] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-08-25 10:02:23.445 [restartedMain] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-08-25 10:15:31.939 [http-nio-8080-exec-2] WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:207] - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-08-25 10:27:02.555 [http-nio-8080-exec-2] WARN  [org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver:207] - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.crm.common.util.result.Result com.crm.controller.EmpController.selectSystemUserManage(java.lang.Integer,com.crm.entity.Test)]

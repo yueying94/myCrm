@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crm.mapper.TestMapper">
+
+
+    <!--SystemUserManage 系统管理-用户管理页面 查询test所有相关信息-->
+    <resultMap id="testByTest" type="com.crm.entity.Test">
+        <association property="emp" javaType="com.crm.entity.Emp">
+            <id column="empid" property="empid"></id>
+            <result column="ename" property="ename"></result>
+            <result column="pwd" property="pwd"></result>
+            <result column="logname" property="logname"></result>
+            <result column="phone" property="phone"></result>
+            <result column="email" property="email"></result>
+            <result column="sex" property="sex"></result>
+            <result column="status" property="status"></result>
+            <result column="createtime" property="createtime"></result>
+        </association>
+        <association property="dept" javaType="com.crm.entity.Dept">
+            <id column="deptid" property="deptid"></id>
+            <result column="deptname" property="deptname"></result>
+            <result column="enable" property="enable"></result>
+            <result column="superior" property="superior"></result>
+            <result column="top" property="top"></result>
+        </association>
+        <association property="position" javaType="com.crm.entity.Position">
+            <id column="positionid" property="positionid"></id>
+            <result column="pname" property="pname"></result>
+        </association>
+    </resultMap>
+
+    <select id="selectSystemUserManageByTest" resultMap="testByTest">
+        SELECT
+        emp.empid,
+        emp.ename,
+        emp.pwd,
+        emp.logname,
+        emp.phone,
+        emp.email,
+        emp.sex,
+        emp.`status`,
+        emp.createtime,
+        dept_emp_position.sid,
+        dept_emp_position.deptid,
+        dept_emp_position.empid,
+        dept_emp_position.positionid,
+        dept.deptid,
+        dept.deptname,
+        dept.`enable`,
+        dept.superior,
+        dept.top,
+        position.positionid,
+        position.pname
+        FROM
+        emp ,
+        dept_emp_position ,
+        dept ,
+        position
+        WHERE
+        emp.empid = dept_emp_position.empid
+        AND dept_emp_position.deptid = dept.deptid
+        AND dept_emp_position.positionid = position.positionid
+        <if test="test.dept != null and test.dept.deptname != null and test.dept.deptname != '' ">
+            AND dept.deptname = #{test.dept.deptname}
+        </if>
+        <if test="test.emp != null and test.emp.status != null and test.emp.status != '' ">
+            AND emp.`status` = #{test.emp.status}
+        </if>
+        <if test="test.position != null and test.position.pname != null and test.position.pname != ''">
+            AND position.pname = #{test.position.pname}
+        </if>
+        <if test="test.emp != null and test.emp.ename != null and test.emp.ename != ''">
+            AND emp.ename = #{test.emp.ename}
+        </if>
+        <if test="test.emp != null and test.emp.logname != null and test.emp.logname != '' ">
+            AND emp.logname = #{test.emp.logname}
+        </if>
+        <if test="test.emp != null and test.emp.sex != null and test.emp.sex != '' ">
+            AND emp.sex = #{test.emp.sex}
+        </if>
+    </select>
+
+
+    <!--systemUserDetail 系统管理-用户详情页面 -->
+    <resultMap id="systemUserDetail" type="com.crm.entity.Test">
+        <association property="emp" javaType="com.crm.entity.Emp">
+            <id column="empid" property="empid"></id>
+            <result column="ename" property="ename"></result>
+            <result column="pwd" property="pwd"></result>
+            <result column="logname" property="logname"></result>
+            <result column="phone" property="phone"></result>
+            <result column="email" property="email"></result>
+            <result column="sex" property="sex"></result>
+            <result column="status" property="status"></result>
+            <result column="createtime" property="createtime"></result>
+        </association>
+        <association property="dept" javaType="com.crm.entity.Dept">
+            <id column="deptid" property="deptid"></id>
+            <result column="deptname" property="deptname"></result>
+            <result column="enable" property="enable"></result>
+            <result column="superior" property="superior"></result>
+            <result column="top" property="top"></result>
+        </association>
+        <association property="position" javaType="com.crm.entity.Position">
+            <id column="positionid" property="positionid"></id>
+            <result column="pname" property="pname"></result>
+        </association>
+    </resultMap>
+
+    <select id="selectSystemUserDetail" resultMap="systemUserDetail">
+        SELECT emp.empid,
+               emp.ename,
+               emp.pwd,
+               emp.logname,
+               emp.phone,
+               emp.email,
+               emp.sex,
+               emp.`status`,
+               emp.createtime,
+               dept_emp_position.sid,
+               dept_emp_position.deptid,
+               dept_emp_position.empid,
+               dept_emp_position.positionid,
+               dept.deptid,
+               dept.deptname,
+               dept.`enable`,
+               dept.superior,
+               dept.top,
+               position.positionid,
+               position.pname
+        FROM emp,
+             dept_emp_position,
+             dept,
+             position
+        WHERE emp.empid = dept_emp_position.empid
+          AND dept_emp_position.deptid = dept.deptid
+          AND dept_emp_position.positionid = position.positionid
+          AND emp.logname = #{test.emp.logname}
+    </select>
+
+
+
+    <!--    new ===================================================================================-->
+    <!--    角色管理,注意这个resultType返回的是Role实体类-->
+    <resultMap id="roleByTest" type="com.crm.entity.Test">
+        <association property="role" javaType="com.crm.entity.Role">
+            <id column="roleid" property="roleid"></id>
+            <result column="rname" property="rname"></result>
+            <result column="description" property="description"></result>
+            <result column="status" property="status"></result>
+        </association>
+    </resultMap>
+
+    <select id="selectSystemRoleManageByTest" resultMap="roleByTest">
+        SELECT
+        role.roleid,
+        role.rname,
+        role.description,
+        role.`status`
+        FROM
+        role
+        WHERE
+        1=1
+        <if test="test.role != null and test.role.rname != null">
+            AND role.rname LIKE "%"#{test.role.rname}"%"
+        </if>
+        <if test="test.role != null and test.role.description != null">
+            AND role.description LIKE "%"#{test.role.description}"%"
+        </if>
+        <if test="test.role != null and test.role.status != null">
+            AND role.description LIKE "%"#{test.role.status}"%"
+        </if>
+    </select>
+
+
+    <!--    角色详情-->
+    <resultMap id="roleDetailByTest" type="com.crm.entity.Test">
+        <association property="role" javaType="com.crm.entity.Role">
+            <id column="roleid" property="roleid"></id>
+            <result column="rname" property="rname"></result>
+            <result column="description" property="description"></result>
+            <result column="status" property="status"></result>
+        </association>
+    </resultMap>
+
+    <select id="selectSystemRoleDetail" resultMap="roleDetailByTest">
+        SELECT role.roleid,
+               role.rname,
+               role.description,
+               role.`status`
+        FROM role
+        WHERE role.rname = #{test.role.rname}
+    </select>
+
+
+
+    <!--    new ===================================================================================-->
+    <!--    权限管理-->
+    <resultMap id="moduleByTest" type="com.crm.entity.Test">
+        <association property="module" javaType="com.crm.entity.Module">
+            <id column="moduleid" property="moduleid"></id>
+            <result column="modulename" property="modulename"></result>
+            <result column="top" property="top"></result>
+            <result column="url" property="url"></result>
+            <result column="enable" property="enable"></result>
+        </association>
+    </resultMap>
+
+    <select id="selectSystemModuleManageByTest" resultMap="moduleByTest">
+        SELECT
+        module.moduleid,
+        module.modulename,
+        module.top,
+        module.url,
+        module.`enable`
+        FROM
+        module
+        WHERE
+        1=1
+        <if test="test.module != null and test.module.modulename != null">
+            AND module.modulename = #{test.module.modulename}
+        </if>
+        <if test="test.module != null and test.module.enable != null">
+            AND module.enable = #{test.module.enable}
+        </if>
+    </select>
+
+    <!--    权限详情-->
+    <resultMap id="moduleDetailByTest" type="com.crm.entity.Test">
+        <association property="module" javaType="com.crm.entity.Module">
+            <id column="moduleid" property="moduleid"></id>
+            <result column="modulename" property="modulename"></result>
+            <result column="top" property="top"></result>
+            <result column="url" property="url"></result>
+            <result column="enable" property="enable"></result>
+        </association>
+    </resultMap>
+
+    <select id="selectSystemModuleDetail" resultMap="moduleDetailByTest">
+        SELECT role.roleid,
+               role.rname,
+               role.description,
+               role.`status`
+        FROM role
+        WHERE role.rname = #{test.role.rname}
+
+
+        SELECT
+            module.moduleid,
+            module.modulename,
+            module.top,
+            module.`enable`,
+            module.url
+        FROM
+            module
+        WHERE
+            module.modulename = #{test.module.modulename}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,2 @@
+2021-08-29 20:05:21.538 [http-nio-8081-exec-4] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException
+2021-08-29 20:16:20.794 [http-nio-8081-exec-1] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}java.lang.NullPointerException

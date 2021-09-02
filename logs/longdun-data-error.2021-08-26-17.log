@@ -1,0 +1,1 @@
+2021-08-26 17:30:07.887 [http-nio-8080-exec-2] ERROR [com.crm.common.util.exception.GlobalExceptionHandler:47] - 运行时异常----------{}org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.reflection.ReflectionException: There is no getter for property named 'rname' in 'class com.crm.entity.Module'

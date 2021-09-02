@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crm.mapper.DeptMapper">
+    <!--映射实体-->
+    <resultMap id="deptMap" type="com.crm.entity.Dept">
+        <id column="deptid"  property="deptid"></id>
+        <result column="deptname"  property="deptname"></result>
+        <result column="enable"  property="enable"></result>
+        <result column="superior"  property="superior"></result>
+        <result column="top"  property="top"></result>
+    </resultMap>
+
+    <select id="selectDept" resultMap="deptMap">
+        SELECT * FROM dept ;
+    </select>
+</mapper>
