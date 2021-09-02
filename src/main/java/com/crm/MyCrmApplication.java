@@ -11,6 +11,7 @@ public class MyCrmApplication {
         System.out.println("hello,git,我要改一些东西");
         System.out.println("hello,git2");
         System.out.println("hello,git branc2323h");
+        System.out.println("idea  push");
     }
 
 }
